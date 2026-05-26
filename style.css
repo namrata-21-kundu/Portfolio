@@ -16,13 +16,6 @@ body {
     background-color: #f0f4f8; /* Soft simple blue background */
     color: #000000; /* Black for general body text */
 }
-
-/* Navbar */
-.navbar {
-    background-color: #001f3f;
-    padding: 15px 40px;
-}
-
 /* Navbar */
 .navbar {
     background-color: #001f3f;
@@ -37,32 +30,26 @@ body {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 14px;
+}
+
+/* Profile Image */
+.nav-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
 }
 
 /* Name */
 .logo {
     color: white;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-/* Resume Button */
-.resume-btn {
-    text-decoration: none;
-    background-color: white;
-    color: #001f3f;
-    padding: 8px 18px;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.resume-btn:hover {
-    background-color: #dbe4ee;
-}
-
-/* Nav Links */
+/* Middle Links */
 .nav-links {
     display: flex;
     gap: 30px;
@@ -82,6 +69,20 @@ body {
     color: #66b2ff;
 }
 
+/* Resume Button (Right Side) */
+.resume-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #001f3f;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #dbe4ee;
+}
 /* Main Content Area */
 .content {
     max-width: 850px;
@@ -190,6 +191,28 @@ body {
     }
 }
 
+/* Contact Links */
+.contact-links {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center; /* Centers the links */
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Links */
+.contact-links a {
+    text-decoration: none;
+    color: #001f3f;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+.contact-links a:hover {
+    color: #0056b3;
+}
 /* =========================
    FOOTER
 ========================= */
