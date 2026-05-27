@@ -1,35 +1,29 @@
-/* Base Reset and Layout */
-* {
+/* =========================
+   BASE RESET
+========================= */
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
+html{
     scroll-behavior: smooth;
-    /* Keeps sections from hiding behind the fixed header when jumping down */
-    scroll-padding-top: 90px; 
-}
-.hero {
-    text-align: center;
-    margin-top: 120px;
+    scroll-padding-top: 90px;
 }
 
-.hero-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #001f3f;
-    margin-bottom: 20px;
+body{
+    background-color: #f0f4f8;
+    color: #000;
 }
-body {
-    background-color: #f0f4f8; /* Soft simple blue background */
-    color: #000000; /* Black for general body text */
-}
-/* Navbar */
-.navbar {
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
     background-color: #001f3f;
     padding: 15px 40px;
 
@@ -38,15 +32,15 @@ body {
     align-items: center;
 }
 
-/* Left Side */
-.nav-left {
+/* Left */
+.nav-left{
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-/* Profile Image */
-.nav-avatar {
+/* Navbar Image */
+.nav-avatar{
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -54,35 +48,33 @@ body {
     border: 2px solid white;
 }
 
-/* Name */
-.logo {
+/* Logo */
+.logo{
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-/* Middle Links */
-.nav-links {
+/* Nav Links */
+.nav-links{
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-/* Links */
-.nav-links a {
+.nav-links a{
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
 }
 
-/* Hover */
-.nav-links a:hover {
+.nav-links a:hover{
     color: #66b2ff;
 }
 
-/* Resume Button (Right Side) */
-.resume-btn {
+/* Resume Button */
+.resume-btn{
     text-decoration: none;
     background-color: white;
     color: #001f3f;
@@ -92,84 +84,125 @@ body {
     transition: 0.3s ease;
 }
 
-.resume-btn:hover {
+.resume-btn:hover{
     background-color: #dbe4ee;
 }
-/* Main Content Area */
-.content {
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content{
     max-width: 850px;
-    margin: 110px auto 60px auto; /* Adds top margin to clear the navbar */
+    margin: 110px auto 60px auto;
     padding: 0 20px;
 }
 
-/* Hero Header */
-.hero-header {
-    text-align: center;
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
     margin-bottom: 60px;
     padding-bottom: 30px;
+
     border-bottom: 2px solid #001f3f;
 }
 
-.hero-header h1 {
+/* Hero Image */
+.hero-img{
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #001f3f;
+}
+
+/* Hero Text */
+.hero{
+    text-align: center;
+}
+
+.hero h1{
     font-size: 3.5rem;
-    color: #001f3f; /* Navy Blue */
+    color: #001f3f;
     margin-bottom: 10px;
 }
 
-.hero-tagline {
-    font-size: 1.4rem;
-    color: #444444;
-    font-weight: 500;
+.hero p{
+    font-size: 1.3rem;
+    color: #444;
 }
 
-/* Portfolio Sections */
-.portfolio-section {
+/* =========================
+   SECTIONS
+========================= */
+
+.portfolio-section{
     padding-top: 20px;
     margin-bottom: 50px;
 }
 
-.portfolio-section h2 {
+.portfolio-section h2{
     font-size: 1.8rem;
-    color: #001f3f; /* Navy Blue */
+    color: #001f3f;
     margin-bottom: 15px;
 }
 
-/* Content Blocks / Cards */
-.card {
-    background-color: #ffffff; /* White contrast container */
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background-color: #ffffff;
     padding: 25px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     line-height: 1.6;
 }
 
-.card h3 {
+.card h3{
     color: #001f3f;
     margin-bottom: 5px;
 }
 
-.subtitle {
+.subtitle{
     font-size: 0.95rem;
-    color: #555555;
+    color: #555;
     margin-bottom: 12px;
     font-style: italic;
 }
 
-/* Grids and Lists */
-.project-grid {
+/* =========================
+   PROJECT GRID
+========================= */
+
+.project-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-.skills-list {
+/* =========================
+   SKILLS
+========================= */
+
+.skills-list{
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     list-style: none;
 }
 
-.skills-list li {
+.skills-list li{
     background-color: #e2e8f0;
     color: #001f3f;
     padding: 6px 14px;
@@ -178,118 +211,95 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive adjustments for mobile screens */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
-    .navbar {
-        height: auto;
-        position: relative;
-    }
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 10px;
-    }
-    .content {
-        margin-top: 30px;
-    }
-    .hero-header h1 {
-        font-size: 2.5rem;
-    }
-}
+/* =========================
+   CONTACT LINKS
+========================= */
 
-/* Contact Links */
-.contact-links {
+.contact-links{
     margin-top: 18px;
+
     display: flex;
-    justify-content: center; /* Centers the links */
+    justify-content: center;
     align-items: center;
+
     gap: 12px;
     flex-wrap: wrap;
 }
 
-/* Links */
-.contact-links a {
+.contact-links a{
     text-decoration: none;
     color: #001f3f;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
-/* Hover */
-.contact-links a:hover {
+.contact-links a:hover{
     color: #0056b3;
 }
+
 /* =========================
    FOOTER
 ========================= */
 
-.footer {
+.footer{
     background-color: #001f3f;
     color: white;
+
     padding: 45px 60px 20px;
     margin-top: 60px;
 }
 
-/* Footer Layout */
-.footer-container {
+.footer-container{
     max-width: 1200px;
     margin: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     gap: 80px;
     flex-wrap: wrap;
 }
 
-/* Footer Sections */
 .footer-left,
 .footer-center,
-.footer-right {
+.footer-right{
     flex: 1;
     min-width: 220px;
 }
 
-/* Headings */
 .footer h3,
-.footer h4 {
+.footer h4{
     margin-bottom: 18px;
     font-size: 1.3rem;
     color: white;
 }
 
-/* Text */
 .footer p,
-.footer a {
+.footer a{
     color: #dbe4ee;
     text-decoration: none;
     line-height: 2;
     font-size: 0.96rem;
 }
 
-/* Hover */
-.footer a:hover {
+.footer a:hover{
     color: #66b2ff;
 }
 
-/* Remove Bullet Points */
 .footer-center ul,
-.footer-right ul {
+.footer-right ul{
     list-style: none;
     padding: 0;
 }
 
-/* Bottom Line */
-.footer-bottom {
+.footer-bottom{
     text-align: center;
     margin-top: 35px;
     padding-top: 18px;
+
     border-top: 1px solid rgba(255,255,255,0.15);
+
     font-size: 0.9rem;
     color: #cbd5e1;
 }
@@ -298,14 +308,46 @@ body {
    RESPONSIVE
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    .footer-container {
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .content{
+        margin-top: 40px;
+    }
+
+    .hero-header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero{
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .hero p{
+        font-size: 1.1rem;
+    }
+
+    .footer-container{
         flex-direction: column;
         gap: 30px;
     }
 
-    .footer {
+    .footer{
         text-align: center;
         padding: 40px 25px 20px;
     }
