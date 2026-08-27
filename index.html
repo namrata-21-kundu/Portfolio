@@ -1,351 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namrata Kundu</title>
+    <title>Namrata Kundu | Tech Enthusiast • Continuous Learner • Creative Thinker</title>
+    <meta name="description"
+        content="Personal portfolio of Namrata Kundu — BCA student at IEM Kolkata, developer, creative thinker, and continuous learner.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <nav class="navbar">
+    <!-- Cyanotype Indigo Art & Ambient Fluid Background -->
+    <div class="ambient-bg-wrapper" aria-hidden="true">
+        <div class="ink-art-backdrop"></div>
+        <div class="grid-mesh"></div>
+        <div class="fluid-glow-orb orb-primary"></div>
+        <div class="fluid-glow-orb orb-secondary"></div>
+        <div class="fluid-glow-orb orb-accent"></div>
+    </div>
 
-    <!-- Left Side -->
-    <div class="nav-left">
-
-        <a href="resume\NamrataKundu_Resume.pdf" download class="resume-btn">
-           Download Resume
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-brand">
+            <div class="nav-logo-badge">NK</div>
+            <span class="nav-brand-text">Namrata Kundu</span>
         </a>
 
-    </div>
+        <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About & Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications-hackathons" class="nav-link">Certifications & Hackathons</a></li>
+            <li><a href="#beyond-coding" class="nav-link">Beyond Coding</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-    <!-- Right Side -->
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#tech-stack">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+        <div class="nav-cta">
+            <a href="resume/NamrataKundu_Resume.pdf" download class="btn-resume-nav">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </div>
+    </nav>
 
-</nav>
-    <header class="hero-header">
+    <!-- Main Content Stream -->
+    <main>
+        <!-- 1. Hero / Home Section -->
+        <header id="home" class="hero-section">
+            <div class="hero-container">
 
-    <img 
-        src="images/WhatsApp Image 2026-05-27 at 1.02.54 AM.jpeg" 
-        alt="Namrata Kundu" 
-        class="hero-img"
-    >
+                <!-- Left: Prominent Photograph -->
+                <div class="hero-visual">
+                    <div class="hero-photo-wrapper">
+                        <div class="hero-photo-card">
+                            <img src="images/WhatsApp Image 2026-05-27 at 1.02.54 AM.jpeg"
+                                alt="Namrata Kundu — BCA Student & Tech Enthusiast">
+                        </div>
+                    </div>
+                </div>
 
-    <div class="hero-text">
+                <!-- Right: Greeting, Dominant Bold Typography, Accent Line & Descriptors -->
+                <div class="hero-content">
+                    <span class="hero-greeting">Hello, I am</span>
+                    <h1 class="hero-name">
+                        Namrata<br>
+                        <span>Kundu</span>
+                    </h1>
 
-        <h1>
-            Namrata<br>
-            Kundu
-        </h1>
+                    <!-- Blue Horizontal Accent Line -->
+                    <div class="hero-line"></div>
 
-        <div class="hero-line"></div>
-        <br>
+                    <!-- Three Short Descriptors -->
+                    <div class="hero-descriptors">
+                        <span class="descriptor-badge">Tech Enthusiast</span>
+                        <span class="descriptor-divider">•</span>
+                        <span class="descriptor-badge">Continuous Learner</span>
+                        <span class="descriptor-divider">•</span>
+                        <span class="descriptor-badge">Creative Thinker</span>
+                    </div>
+                </div>
 
-        <p>
-            BCA Student | Tech Enthusiast
-        </p>
-        
-        <br><br><br>
-        <span class="scroll-text">
-            SCROLL DOWN
-        </span>
+            </div>
 
-    </div>
+            <!-- Smooth Scrolling Cue -->
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About Me section">
+                <div class="mouse-pill">
+                    <div class="mouse-dot"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </header>
 
-</header>
+        <!-- 3. About Me + Education (Combined Section) -->
+        <section id="about" class="portfolio-section reveal-item">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
 
-        <section id="about" class="portfolio-section">
-            <br><br><h2>About Me</h2>
-            <div class="card">
-                <p>Hello, I am  Namrata Kundu, a BCA student of Institute of Engineering and Management, Kolkata. I am aiming to leverage coding skills and analytical thinking to solve real-world problems. Eager to contribute effectively and continuously learn in a dynamic professional environment. </p>
+            <div class="about-edu-container">
+                <!-- Personal Narrative Introduction -->
+                <div class="about-narrative-card">
+                    <p class="about-lead-text">
+                        Hello, I am <strong>Namrata Kundu</strong>, currently pursuing my Bachelor of Computer
+                        Applications at the <strong>Institute of Engineering and Management (IEM), Kolkata</strong>.
+                        <br><br>
+                        My approach to technology centers on turning logical challenges into elegant, structured
+                        solutions. I have a deep curiosity for software engineering, database design, algorithms, and
+                        exploring emerging tools. Parallel to technical problem solving, my background in fine arts,
+                        creative writing, and campus editorial leadership brings a refined human-centered perspective to
+                        everything I build.
+                    </p>
+
+                
+                <!-- Education Subsection -->
+                <div class="education-subsection">
+                    <h3 class="subsection-title">
+                        <span>🎓</span>
+                        <span>Academic Foundation</span>
+                    </h3>
+
+                    <div class="edu-timeline">
+                        <!-- BCA -->
+                        <div class="edu-card">
+                            <div class="edu-header">
+                                <h4 class="edu-degree">Bachelor of Computer Applications (BCA)</h4>
+                                <span class="edu-tag">2024 – Present</span>
+                            </div>
+                            <div class="edu-institution">Institute of Engineering & Management (IEM), Kolkata</div>
+                            <p class="edu-details">
+                                Coursework focused on Object-Oriented Programming, Database Management Systems (DBMS),
+                                Data Structures & Algorithms, Software Engineering, and Modern Web Systems.
+                            </p>
+                        </div>
+
+                        <!-- 12th Grade -->
+                        <div class="edu-card">
+                            <div class="edu-header">
+                                <h4 class="edu-degree">All India Senior School Certificate Examination (AISSCE - 12th)
+                                </h4>
+                                <span class="edu-tag edu-tag-gold">88.83% Score</span>
+                            </div>
+                            <div class="edu-institution">Shri Shikshayatan School | CBSE | 2024</div>
+                            <p class="edu-details">
+                                Completed higher secondary education with academic distinction, developing rigorous
+                                analytical abilities, mathematics proficiency, and logical reasoning.
+                            </p>
+                        </div>
+
+                        <!-- 10th Grade -->
+                        <div class="edu-card">
+                            <div class="edu-header">
+                                <h4 class="edu-degree">All India Secondary School Examination (AISSE - 10th)</h4>
+                                <span class="edu-tag edu-tag-gold">90.50% Score</span>
+                            </div>
+                            <div class="edu-institution">Shri Shikshayatan School | CBSE | 2022</div>
+                            <p class="edu-details">
+                                Completed secondary education with high academic excellence, demonstrating consistency,
+                                dedication, and active participation in extracurricular events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!-- Education Section -->
-<section id="education" class="portfolio-section">
-    <h2>Education</h2>
-
-    <div class="card">
-        <h3>Bachelor of Computer Applications (BCA)</h3>
-        <p class="subtitle">2024 – Present</p>
-        <p>
-            Currently pursuing a Bachelor of Computer Applications with a focus on programming, database management systems, and core computer science fundamentals.
-            </p>
-        </div>
-        <br>
-        <div class="card">
-            <h3>All India Senior School Certificate Examination (AISSCE)</h3>
-            <p class="subtitle">Shri Shikshayatan School | CBSE | 2024</p>
-            <p>
-                Successfully completed higher secondary education with an overall score of
-                <strong>88.83%</strong>, building a strong academic foundation in analytical and problem-solving skills.
-            </p>
-        </div>
-        <br>
-        <div class="card">
-            <h3>All India Secondary School Examination (AISSE)</h3>
-            <p class="subtitle">Shri Shikshayatan School | CBSE | 2022</p>
-            <p>
-                Completed secondary education with an overall score of
-                <strong>90.50%</strong>, demonstrating consistent academic excellence and dedication.
-            </p>
-        </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-<section id="tech-stack" class="portfolio-section">
-    <h2>Tech Stack</h2>
-
-    <div class="project-grid">
-
-        <div class="card">
-            <h3>Programming</h3>
-            <p>Java, Python</p>
-        </div>
-
-        <div class="card">
-            <h3>Database</h3>
-            <p>MySQL</p>
-        </div>
-
-        <div class="card">
-            <h3>Version Control</h3>
-            <p>Git, GitHub</p>
-        </div>
-
-        <div class="card">
-            <h3>Concepts</h3>
-            <p>OOP Principles, Data Structures & Algorithms</p>
-        </div>
-
-    </div>
-</section>
 
         <!-- Projects Section -->
-        <section id="projects" class="portfolio-section">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="card">
-                    <h3>Hostel Management System</h3>
-                    <p>Built a Hotel Management System using Python and MySQL with CRUD functionalities for rooms, guests, and bookings, along with features like check-in/check-out, room availability tracking, and billing management.</p>
+        <section id="projects" class="portfolio-section reveal-item">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Complaint Flow -->
+                <div class="project-card">
+
+
+                <!-- Hostel Management System -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-meta">Database & Application</div>
+                        <h3 class="project-title">Hostel Management System</h3>
+                        <p class="project-description">
+                            A complete administrative management system engineered in Python and MySQL. Features
+                            end-to-end CRUD operations for resident profiles, real-time room occupancy tracking,
+                            reservation scheduling, and automated billing generation.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Normalized relational database with ACID integrity</li>
+                            <li>Live room availability & booking allocation engine</li>
+                            <li>Automated invoice calculation and guest ledger</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">CRUD System</span>
+                            <span class="tech-badge">Billing Engine</span>
+                        </div>
+                        <a href="https://github.com/namrata-21-kundu" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <span>Explore Repository</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Event Management System </h3>
-                    <p> Developed a Java-based Event Management System using Object-Oriented Programming concepts to manage events, organizers, participants, and ticket details, with features like event search and event viewing a menu-driven interface.</p>
+
+                <!--Event Management System -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-meta">☕ Java OOP Software</div>
+                        <h3 class="project-title">Event Management System</h3>
+                        <p class="project-description">
+                            A modular Java application utilizing core Object-Oriented Programming principles to handle
+                            multi-tier event scheduling, organizer assignments, attendee registries, ticket inventories,
+                            and dynamic log searches.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Inheritance, encapsulation, and polymorphism design</li>
+                            <li>Responsive menu-driven interactive interface</li>
+                            <li>Robust data validation and ticket allocation logic</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">OOP Architecture</span>
+                            <span class="tech-badge">Data Handling</span>
+                        </div>
+                        <a href="https://github.com/namrata-21-kundu" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <span>Explore Repository</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Open Source Contribution: Zero To Hero In Java</h3>
-                    <p>Contributed to Zero-To-Hero-In-Java, an open-source Java repository on GitHub containing core Java concepts, OOP principles, and practical coding exercises, demonstrating collaboration and version control skills.  </p>
+
+                <!-- Project 4: Zero To Hero In Java -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-meta">Open Source Contribution</div>
+                        <h3 class="project-title">Zero To Hero In Java</h3>
+                        <p class="project-description">
+                            Active open-source community repository contributor on GitHub. Authored code modules,
+                            structured OOP explanations, and practical coding exercises to help developers build strong
+                            foundational Java skills.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Comprehensive concept guides and code samples</li>
+                            <li>Git workflow collaboration with community reviews</li>
+                            <li>Focus on clean code conventions and modularity</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Open Source</span>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Git & GitHub</span>
+                        </div>
+                        <a href="https://github.com/namrata-21-kundu" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <span>View Contributions</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-<!-- Achievements Section -->
-<section id="achievements" class="portfolio-section">
-    <h2>Achievements</h2>
-    <div class="card">
-        <p>
-  A passionate and actively involved student with achievements across technical, creative, literary, and leadership domains, consistently demonstrating innovation, communication, teamwork, and problem-solving abilities through competitions, academic excellence, and campus initiatives.
-</p>
+        <!-- 5. Certifications & Hackathons -->
+        <section id="certifications-hackathons" class="portfolio-section reveal-item">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Hackathons ⚡</h2>
+            </div>
 
-<li>
-  <strong class="highlight-title">
-    Winner – Campus Tanks: Best Tech Business Pitch (2025)</strong><br>
-  Recognized for presenting an innovative technology-driven business idea with strong problem-solving potential, creativity, and presentation skills.
-</li>
+            <div class="cert-hack-grid">
+                <!-- Category 1: Certifications -->
+                <div class="category-column-card">
+                    <div class="cat-column-header">
+                        <span style="font-size: 1.5rem;">📜</span>
+                        <h3>Certifications</h3>
+                    </div>
 
-<li>
-  <strong class="highlight-title">Winner – Vision in Motion: Short Film Making Competition (2025)</strong><br>
-  Secured first position for creative storytelling, direction, and impactful visual presentation in a short film competition.
-</li>
+                    <ul class="entries-list">
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>NPTEL – Database Management System</h5>
+                                <span class="entry-meta-tag">NPTEL / IIT • 2026</span>
+                                <p>Comprehensive certification covering relational algebra, SQL optimization,
+                                    normalization forms, transaction concurrency, and ACID recovery mechanisms.</p>
+                            </div>
+                        </li>
 
-<li>
-  <strong class="highlight-title">Special Mention – Colour Splash 3.0 Drawing Competition (2025)</strong> <br>
-  Received special recognition for artistic creativity, visual expression, and originality in a competitive art event.
-</li>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>NPTEL – Joy of Computing Using Python</h5>
+                                <span class="entry-meta-tag">NPTEL / IIT • 2026</span>
+                                <p>Computational thinking, data parsing, algorithm design, recursion, and practical
+                                    problem-solving in Python.</p>
+                            </div>
+                        </li>
 
-<li>
-  <strong class="highlight-title">Special Mention – Ink and Imagination: Creative Writing Competition (2025)</strong><br>
-  Appreciated for creative writing, originality of thought, and expressive storytelling skills.
-</li>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>NPTEL – Problem Solving in C</h5>
+                                <span class="entry-meta-tag">NPTEL / IIT • 2025</span>
+                                <p>Mastery of structured programming, pointers, memory allocation, arrays, and
+                                    algorithmic problem-solving techniques.</p>
+                            </div>
+                        </li>
 
-<li>
-  <strong class="highlight-title">Winner – Jagoroni Debate Competition (2024)</strong> <br>
-  Won the debate competition by demonstrating strong public speaking, analytical thinking, and persuasive communication abilities.
-</li>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>Global Immersion Program — AIT Thailand</h5>
+                                <span class="entry-meta-tag">Asian Institute of Technology, Thailand • 2025</span>
+                                <p>Selected for international academic immersion focusing on technology innovation,
+                                    cross-cultural collaboration, and global learning environments.</p>
+                            </div>
+                        </li>
 
-<li>
-  <strong class="highlight-title">Winner – Intellectia Literary Competition (2024)</strong> <br>
-  Achieved first position in a literary competition that highlighted creativity, critical thinking, and language proficiency.
-</li>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>Skill Booster Certification</h5>
+                                <span class="entry-meta-tag">Skill Academia • 2025</span>
+                                <p>Professional competencies, structured technical communication, and workplace
+                                    collaboration methodologies.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-<li>
-  <strong class="highlight-title">Academic Achievement – 2nd Position Holder (First Year)</strong><br>
-  Secured 2nd position in the academic ranking during the first year through consistent academic performance and dedication.
-</li>
+                <!-- Category 2: Hackathons & Technical Contests -->
+                <div class="category-column-card">
+                    <div class="cat-column-header">
+                        <span style="font-size: 1.5rem;">⚡</span>
+                        <h3>Hackathons & Technical Contests</h3>
+                    </div>
 
-<li>
-  <strong class="highlight-title">Diploma in Fine Arts</strong><br>
-  Successfully completed a Diploma in Fine Arts from Akhil Bharatiya Sangeet-O-Sanskriti Samsad, developing artistic and creative skills alongside academics.
-</li>
-    </div>
-</section>
+                    <ul class="entries-list">
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>Winner — Campus Tanks: Best Tech Business Pitch</h5>
+                                <span class="entry-meta-tag entry-meta-gold">🏆 1st Position • 2025</span>
+                                <p>Awarded first prize for presenting an innovative technology-driven business model
+                                    with high viability, creative problem-solving, and convincing presentation delivery.
+                                </p>
+                            </div>
+                        </li>
 
-<section id="certificates" class="portfolio-section">
-    <h2>Certificates</h2>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>MLH Hack Days: “BOT TO AGENT”</h5>
+                                <span class="entry-meta-tag">Major League Hacking • 2025</span>
+                                <p>Engineered and deployed <a href="https://github.com/namrata-21-kundu/ComplaintFlow"
+                                        target="_blank" rel="noopener noreferrer">Complaint Flow</a> — an automated
+                                    issue-tracking system built to accelerate ticket management under tight sprint
+                                    deadlines.</p>
+                            </div>
+                        </li>
 
-    <div class="card">
-        <ul class="certificates-list">
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>Academic Achievement — 2nd Position Holder</h5>
+                                <span class="entry-meta-tag entry-meta-gold">🎓 Rank #2 (First Year BCA) • IEM
+                                    Kolkata</span>
+                                <p>Secured 2nd position in overall departmental academic ranking during the first year
+                                    through consistent academic excellence and dedication.</p>
+                            </div>
+                        </li>
 
-            <li>
-                <strong class="highlight-title">NPTEL – Database Management System (2026)</strong> <br>
-                Successfully completed the NPTEL certification course covering database concepts, SQL, normalization, transactions, and DBMS fundamentals.
-            </li>
+                        <li class="entry-item">
+                            <span class="entry-dot"></span>
+                            <div class="entry-content">
+                                <h5>Can You C: Technical Debugging Challenge</h5>
+                                <span class="entry-meta-tag">Technical Contest • 2025</span>
+                                <p>Competed in a fast-paced code-auditing competition focused on identifying memory
+                                    leaks, logic anomalies, and pointer issues in C.</p>
+                            </div>
+                        </li>
 
-            <li>
-                <strong class="highlight-title">NPTEL – Joy of Computing Using Python (2026)</strong> <br>
-                Completed a Python-based problem-solving course focused on computational thinking, programming logic, and practical applications.
-            </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <li>
-                <strong class="highlight-title">NPTEL – Problem Solving Through Programming in C (2025)</strong> <br>
-                Gained a strong foundation in C programming, algorithms, logical thinking, and structured problem-solving techniques.
-            </li>
+        <!-- 6. Beyond Coding (Editorial & Creative Layout) -->
+        <section id="beyond-coding" class="portfolio-section reveal-item">
+            <div class="section-header">
+                <h2 class="section-title">Beyond Coding</h2>
+            </div>
 
-            <li>
-                <strong class="highlight-title">Global Immersion Program – Asian Institute of Technology, Thailand (2025)</strong> <br>
-                Participated in an international immersion program focused on academic collaboration, innovation, cultural exchange, and global learning experiences.
-            </li>
+            <p class="beyond-coding-intro">
+                Technology is strongest when paired with empathy, storytelling, and visual creativity. Beyond code, I
+                actively lead editorial initiatives, participate in debate & literary arts, direct short films, and
+                organize flagship university events.
+            </p>
 
-            <li>
-                <strong class="highlight-title">Skill Booster Course – Skill Academia (2025)</strong> <br>
-                Completed a skill development program aimed at enhancing technical knowledge, communication, and professional competencies.
-            </li>
+            <div class="editorial-magazine-grid">
+                <!-- Editorial Secretary -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">📰 Departmental Publishing</div>
+                        <h3 class="editorial-headline">Editorial Secretary</h3>
+                        <div class="editorial-role">Gyan Ke Bytes • IEM BCA (2025 – Present)</div>
+                        <p class="editorial-excerpt">
+                            Leading the editorial coordination for the official departmental newsletter of IEM Ashram
+                            Campus. Managing submission pipelines, content curation, and publishing quality.
+                        </p>
+                    </div>
+                </div>
 
-        </ul>
-    </div>
-</section>
+                <!-- Short Film Making Winner -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">🎬 Visual Storytelling</div>
+                        <h3 class="editorial-headline">Winner — Vision in Motion</h3>
+                        <div class="editorial-role">Short Film Making Competition (2025)</div>
+                        <p class="editorial-excerpt">
+                            Secured 1st position for creative screenplay direction, thematic storytelling, and visual
+                            composition in a competitive short film competition.
+                        </p>
+                    </div>
+                </div>
 
-<section id = "competitions" class = "portfolio-section">
-    <h2>Hackathons and Competitions</h2>
-    <div class = "card">
-        <ul class = "competitions-list">
-            <li><strong class="highlight-title">Hackathon:</strong> Participated in “BOT TO AGENT” under MLH Hack Days, where I built 
-            <a href="https://github.com/namrata-21-kundu/ComplaintFlow" target="_blank">Complaint Flow</a> — an innovative solution focused on solving real-world problems while enhancing my creativity, and problem-solving skills.</li>
-            <li>  <strong class="highlight-title">Can You C:</strong> Participated in a debugging-based technical event focused on identifying and fixing programming errors, which helped strengthen my logical thinking, debugging, and problem-solving skills in C programming.
-            </li>
-            <li><strong class="highlight-title">Bug Bounty Challenge:</strong> Participated in the Bug Bounty Challenge organized by the IEEE IEM Student Branch under the banner of Sytron, in collaboration with IEEE IEM Student Branch Chapters, where I explored cybersecurity concepts, vulnerability analysis, and problem-solving in a competitive environment.</li>
-        </ul>
-    </div>
-</section>
+                <!-- Debate & Literary Winner -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">🗣️ Public Speaking & Literature</div>
+                        <h3 class="editorial-headline">Winner — Jagoroni Debate & Intellectia</h3>
+                        <div class="editorial-role">Inter-College Debate & Literary Competitions (2024)</div>
+                        <p class="editorial-excerpt">
+                            Won 1st place in inter-college debates and literary symposia, showcasing persuasive
+                            argumentation, structured logic, and expressive writing.
+                        </p>
+                    </div>
+                </div>
 
-<section id = "beyond-coding" class ="portfolio-section">
-    <h2>Beyond Coding</h2>
-    <div class ="card">
-        <p>Active contributor to campus technical initiatives, editorial activities, community events, and student-led programs, consistently participating in collaborative and leadership-driven environments.</p>
-        <ul class = "responsibilities-list">
-            <li>
-  <strong class="highlight-title">Editorial Secretary – Gyan Ke Bytes (2025 – Present)</strong> <br>
-  Serving as the Editorial Secretary of <em>Gyan Ke Bytes</em>, the departmental newsletter of IEM Ashram Campus. Responsibilities include coordinating with the editorial team, proofreading and refining content, managing submissions, and contributing to editorial writing while enhancing leadership, communication, and team management skills.
-</li>
+                <!-- Fine Arts Diploma -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">🎨 Visual Arts & Drawing</div>
+                        <h3 class="editorial-headline">Diploma in Fine Arts</h3>
+                        <div class="editorial-role">Akhil Bharatiya Sangeet-O-Sanskriti Samsad</div>
+                        <p class="editorial-excerpt">
+                            Completed a recognized Fine Arts Diploma alongside academic studies. Received Special
+                            Mention in <em>Colour Splash 3.0</em> Drawing & <em>Ink and Imagination</em> Creative
+                            Writing.
+                        </p>
+                    </div>
+                </div>
 
-    <li>
-    <strong class="highlight-title">Core Team Member – Departmental Wall Magazine (2025 – Present)</strong> <br>
-    Actively involved in the planning, content organization, and execution of the departmental wall magazine, contributing creative ideas and collaborating with team members to ensure engaging and well-structured publication content.
-    </li>
+                <!-- Wall Magazine Core Team -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">📐 Creative Design & Layout</div>
+                        <h3 class="editorial-headline">Core Team & Visual Designer</h3>
+                        <div class="editorial-role">Departmental Wall Magazine (2025 – Present)</div>
+                        <p class="editorial-excerpt">
+                            Curating thematic aesthetics, visual layouts, and artistic presentations for the
+                            departmental wall magazine to engage student readers.
+                        </p>
+                    </div>
+                </div>
 
-    <li>
-    <strong class="highlight-title">Editorial Team Member – Horizon and Beyond (Vol. 5)  (2025)</strong><br>
-        Part of the editorial committee for <em>Horizon and Beyond</em>, the annual magazine of IEM BCA Ashram Campus. Contributed to content editing, proofreading, reviewing submissions, and coordinating publication activities as part of the magazine production team.
-    </li>
+                <!-- Event Hosting & Leadership -->
+                <div class="editorial-story-card">
+                    <div>
+                        <div class="editorial-category">🎙️ Campus Leadership & Hosting</div>
+                        <h3 class="editorial-headline">Event Host & Organizer</h3>
+                        <div class="editorial-role">Hack-O-Lution 2K25/2K26 • Intellectia 2.0 • Quizzophrenia</div>
+                        <p class="editorial-excerpt">
+                            Hosted stages and coordinated participant logistics for 36-hour hackathons and university
+                            fests with 500+ participants, fostering community and collaborative energy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <li>
-    <strong class="highlight-title">Volunteer & Host – Technical and Cultural Events</strong><br>
-    Volunteered and served as a host for several major college events, including <em>Hack-O-Lution 2K25 & 2K26</em>, the official 36-hour hackathon organized by the BCA Department of IEM, and <em>Quizzophrenia ’25</em>, the annual quiz fest organized by the Quizzard Club of IEM. Responsibilities included event coordination, participant management, stage hosting, and ensuring smooth event execution.
-    </li>
+        <!-- Contact Section -->
+        <section id="contact" class="portfolio-section reveal-item">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+            </div>
 
-    <li>
-    <strong class="highlight-title">Organizer – Intellectia 2.0 (2025)</strong><br>
-    Organized <em>Intellectia 2.0</em> under the Words of Life Club, taking responsibility for team coordination, event planning, question preparation, participant engagement, and hosting, while developing leadership, communication, and organizational skills.
-    </li>
-        </ul>
-    </div>
-</section>
+            <div class="contact-compact-card">
+                <p class="contact-compact-text">
+                    Feel free to connect with me regarding opportunities, collaborations, or creative and technical discussions.
+                </p>
 
-<!-- Contact Section -->
-<section id="contact" class="portfolio-section">
-    <h2>Contact</h2>
-
-    <div class="card">
-        <p>
-            Feel free to connect with me regarding opportunities, collaborations, or creative and technical discussions.
-        </p>
-
-        <div class="contact-links">
-            <a href="mailto:namratakundu22work@gmail.com">Email</a>
-            <span>|</span>
-
-            <a href="https://github.com/namrata-21-kundu" target="_blank">GitHub</a>
-            <span>|</span>
-
-            <a href="https://linkedin.com/in/namrata-kundu-44aa39318" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</section>
-
+                <div class="contact-compact-links">
+                    <a href="mailto:namratakundu22work@gmail.com" class="compact-link">Email</a>
+                    <span class="compact-divider">|</span>
+                    <a href="https://github.com/namrata-21-kundu" target="_blank" rel="noopener noreferrer" class="compact-link">GitHub</a>
+                    <span class="compact-divider">|</span>
+                    <a href="https://linkedin.com/in/namrata-kundu-44aa39318" target="_blank" rel="noopener noreferrer" class="compact-link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
     </main>
-<footer class="footer">
-    <div class="footer-container">
 
-        <div class="footer-left">
-            <h3>Namrata Kundu</h3>
-            <p>Tech Enthusiast | Learner | Creator</p>
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Namrata Kundu</h3>
+                <p>“Building, learning & creating.”</p>
+            </div>
+
+            <div class="footer-social-links">
+                <a href="mailto:namratakundu22work@gmail.com" class="social-link" title="Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://github.com/namrata-21-kundu" target="_blank" rel="noopener noreferrer"
+                    class="social-link" title="GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/namrata-kundu-44aa39318" target="_blank" rel="noopener noreferrer"
+                    class="social-link" title="LinkedIn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
         </div>
 
-        <div class="footer-center">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>© 2026 Namrata Kundu. All rights reserved.</p>
+            <a href="#home" class="back-to-top">
+                <span>Back to Top</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </a>
         </div>
+    </footer>
 
-        <div class="footer-right">
+    <!-- Minimal Scroll Reveal Observer (Pure Vanilla JS) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal-item');
 
-    <h4>Contact</h4>
-    <p>
-        <a href="mailto:namratakundu22work@gmail.com">
-            Email
-        </a>
-    </p>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            });
 
-    <p>
-        <a href="https://github.com/namrata-21-kundu" target="_blank">
-            GitHub
-        </a>
-    </p>
-
-    <p>
-        <a href="https://www.linkedin.com/in/namrata-kundu-44aa39318/ target="_blank">
-            Linkedin
-        </a>
-    </p>
-</div>
-
-<br>
-    <div class="footer-bottom">
-        <p>© 2026 Namrata Kundu. All Rights Reserved.</p>    
-    </div>
-</footer>
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
+
 </html>
